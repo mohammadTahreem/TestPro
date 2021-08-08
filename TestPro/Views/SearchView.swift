@@ -35,7 +35,8 @@ struct SearchView: View {
                 if meals.meals != nil && !meals.meals!.isEmpty {
                     List(meals.meals!, id: \.self){ searchItem in
                         NavigationLink(
-                            destination: Text(searchItem.strInstructions!),
+                            destination: Text(searchItem.strInstructions!)
+                                .padding(),
                             label: {
                                 SearchViewCard(urlString: searchItem.strMealThumb!, mealName: searchItem.strMeal!)
                             })
@@ -50,7 +51,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-//        SearchView()
+        //        SearchView()
         SearchViewCard(urlString: "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg", mealName: "Matar Paneer")
     }
 }
