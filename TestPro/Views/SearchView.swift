@@ -35,7 +35,11 @@ struct SearchView: View {
             } else {
                 if meals.meals != nil && !meals.meals!.isEmpty {
                     List(meals.meals!, id: \.self){ searchItem in
-                        SearchViewCard(urlString: searchItem.strMealThumb!, mealName: searchItem.strMeal!)
+                        NavigationLink(
+                            destination: Text(searchItem.strInstructions!),
+                            label: {
+                                SearchViewCard(urlString: searchItem.strMealThumb!, mealName: searchItem.strMeal!)
+                            })
                     }
                 }
             }
