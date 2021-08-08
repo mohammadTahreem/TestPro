@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FavoritesView: View {
     @EnvironmentObject var favorites : FavoriteItems
-    @State var favoriteList: [String] = []
     var body: some View {
         
         if favorites.favoriteItem.count >= 1 {

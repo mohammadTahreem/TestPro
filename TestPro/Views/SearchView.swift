@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchFoodItem: String = ""
-    @State var searchList : [String] = []
     @State var searchCardList: [MealsList] = []
     @State var meals : Meals = Meals()
     @State var loadingBool: Bool = false
