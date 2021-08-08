@@ -11,6 +11,13 @@
 		CC8A0D5626BE807B006DB2F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D5526BE807B006DB2F9 /* ContentView.swift */; };
 		CC8A0D5826BE807E006DB2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8A0D5726BE807E006DB2F9 /* Assets.xcassets */; };
 		CC8A0D5B26BE807E006DB2F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8A0D5A26BE807E006DB2F9 /* Preview Assets.xcassets */; };
+		CC8A0D6326BE8418006DB2F9 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6226BE8418006DB2F9 /* TabView.swift */; };
+		CC8A0D6526BE86D2006DB2F9 /* MealsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6426BE86D2006DB2F9 /* MealsList.swift */; };
+		CC8A0D6726BE88EA006DB2F9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6626BE88EA006DB2F9 /* SearchView.swift */; };
+		CC8A0D6A26BE8AF7006DB2F9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6926BE8AF7006DB2F9 /* FavoritesView.swift */; };
+		CC8A0D6C26BE8B5F006DB2F9 /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6B26BE8B5F006DB2F9 /* NetworkClass.swift */; };
+		CC8A0D7026BE912D006DB2F9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D6F26BE912D006DB2F9 /* WebView.swift */; };
+		CC8A0D7226BF8F5A006DB2F9 /* FavoriteItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A0D7126BF8F5A006DB2F9 /* FavoriteItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		CC8A0D5726BE807E006DB2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC8A0D5A26BE807E006DB2F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC8A0D5C26BE807E006DB2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8A0D6226BE8418006DB2F9 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		CC8A0D6426BE86D2006DB2F9 /* MealsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsList.swift; sourceTree = "<group>"; };
+		CC8A0D6626BE88EA006DB2F9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CC8A0D6926BE8AF7006DB2F9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		CC8A0D6B26BE8B5F006DB2F9 /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
+		CC8A0D6F26BE912D006DB2F9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CC8A0D7126BF8F5A006DB2F9 /* FavoriteItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 				CC8A0D5726BE807E006DB2F9 /* Assets.xcassets */,
 				CC8A0D5C26BE807E006DB2F9 /* Info.plist */,
 				CC8A0D5926BE807E006DB2F9 /* Preview Content */,
+				CC8A0D6226BE8418006DB2F9 /* TabView.swift */,
+				CC8A0D6426BE86D2006DB2F9 /* MealsList.swift */,
+				CC8A0D6626BE88EA006DB2F9 /* SearchView.swift */,
+				CC8A0D6926BE8AF7006DB2F9 /* FavoritesView.swift */,
+				CC8A0D6B26BE8B5F006DB2F9 /* NetworkClass.swift */,
+				CC8A0D6F26BE912D006DB2F9 /* WebView.swift */,
+				CC8A0D7126BF8F5A006DB2F9 /* FavoriteItems.swift */,
 			);
 			path = TestPro;
 			sourceTree = "<group>";
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8A0D6726BE88EA006DB2F9 /* SearchView.swift in Sources */,
+				CC8A0D7026BE912D006DB2F9 /* WebView.swift in Sources */,
 				CC8A0D5626BE807B006DB2F9 /* ContentView.swift in Sources */,
+				CC8A0D6A26BE8AF7006DB2F9 /* FavoritesView.swift in Sources */,
+				CC8A0D6326BE8418006DB2F9 /* TabView.swift in Sources */,
+				CC8A0D7226BF8F5A006DB2F9 /* FavoriteItems.swift in Sources */,
+				CC8A0D6C26BE8B5F006DB2F9 /* NetworkClass.swift in Sources */,
 				CC8A0D5426BE807B006DB2F9 /* TestProApp.swift in Sources */,
+				CC8A0D6526BE86D2006DB2F9 /* MealsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestPro/Preview Content\"";
+				DEVELOPMENT_TEAM = J2NS2KYK3R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestPro/Preview Content\"";
+				DEVELOPMENT_TEAM = J2NS2KYK3R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TestProApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViewStruct()
+                .environmentObject(FavoriteItems())
         }
     }
 }
