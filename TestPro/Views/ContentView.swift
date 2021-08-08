@@ -23,8 +23,7 @@ struct ContentView: View {
                     .onAppear(){
                         NetworkClass(meals: $meals, isLoading: $loadingBool).getRandomMeal()
                     }
-            }
-            else{
+            } else {
                 if meals.meals != nil && !meals.meals!.isEmpty {
                     Image(systemName: "person.fill")
                         .data(url: URL(string: meals.meals![0].strMealThumb!)!)
@@ -47,9 +46,9 @@ struct ContentView: View {
                                                                                                             meals.meals![0].strMeal!) )!)
                                 } else {
                                     favItem.favoriteItem.append(MealsList(
-                                                    strMealThumb: meals.meals![0].strMealThumb!,
-                                                    strMeal:
-                                                        meals.meals![0].strMeal!))
+                                                                    strMealThumb: meals.meals![0].strMealThumb!,
+                                                                    strMeal:
+                                                                        meals.meals![0].strMeal!))
                                 }
                             }
                     }
@@ -57,7 +56,7 @@ struct ContentView: View {
                     Spacer()
                 }else{
                     Text("Meal Name")
-                        
+                    
                     Image(systemName: "text.below.photo")
                         .resizable()
                         .scaledToFit()
@@ -71,14 +70,14 @@ struct ContentView: View {
     }
     
     
-   
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(meals: Meals(meals: [MealsList(strMealThumb: "text.below.photo", strMeal: "Chicken Thai")]), loadingBool: false)
-            
-            
+        
+        
     }
 }
 

@@ -27,10 +27,16 @@ struct SearchView: View {
                 .padding()
                 .keyboardType(.alphabet)
             Spacer()
-            if meals.meals != nil && !meals.meals!.isEmpty {
-                List(meals.meals!, id: \.self){ searchItem in
-                    SearchViewCard(urlString: searchItem.strMealThumb!, mealName: searchItem.strMeal!)
-                        .shadow(radius: 10)
+            if loadingBool {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+                Spacer()
+            } else {
+                if meals.meals != nil && !meals.meals!.isEmpty {
+                    List(meals.meals!, id: \.self){ searchItem in
+                        SearchViewCard(urlString: searchItem.strMealThumb!, mealName: searchItem.strMeal!)
+                    }
                 }
             }
         }
@@ -41,8 +47,8 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
-        //        SearchViewCard(urlString: "fhkjsd",mealName: "Fine")
+//        SearchView()
+        SearchViewCard(urlString: "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg", mealName: "Matar Paneer")
     }
 }
 
@@ -64,6 +70,7 @@ struct SearchViewCard: View {
             Text(mealName)
             Spacer()
             Image(systemName: isFav ?  "star.fill" : "star")
+                .padding()
                 .onTapGesture {
                     isFav.toggle()
                     if !isFav {
@@ -75,5 +82,9 @@ struct SearchViewCard: View {
                     }
                 }
         }
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 10)
+        .padding()
     }
 }

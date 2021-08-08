@@ -47,6 +47,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC5ED29B26BFBB4C00A948CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC5ED29C26BFBB6600A948CE /* SubViews */,
+				CC8A0D6926BE8AF7006DB2F9 /* FavoritesView.swift */,
+				CC8A0D6626BE88EA006DB2F9 /* SearchView.swift */,
+				CC8A0D6226BE8418006DB2F9 /* TabView.swift */,
+				CC8A0D5526BE807B006DB2F9 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC5ED29C26BFBB6600A948CE /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A0D6F26BE912D006DB2F9 /* WebView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		CC5ED29D26BFBB8400A948CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A0D7126BF8F5A006DB2F9 /* FavoriteItems.swift */,
+				CC8A0D6426BE86D2006DB2F9 /* MealsList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC5ED29E26BFBB9E00A948CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A0D6B26BE8B5F006DB2F9 /* NetworkClass.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		CC8A0D4726BE807B006DB2F9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +103,13 @@
 		CC8A0D5226BE807B006DB2F9 /* TestPro */ = {
 			isa = PBXGroup;
 			children = (
+				CC5ED29E26BFBB9E00A948CE /* Networking */,
+				CC5ED29D26BFBB8400A948CE /* Models */,
+				CC5ED29B26BFBB4C00A948CE /* Views */,
 				CC8A0D5326BE807B006DB2F9 /* TestProApp.swift */,
-				CC8A0D5526BE807B006DB2F9 /* ContentView.swift */,
 				CC8A0D5726BE807E006DB2F9 /* Assets.xcassets */,
 				CC8A0D5C26BE807E006DB2F9 /* Info.plist */,
 				CC8A0D5926BE807E006DB2F9 /* Preview Content */,
-				CC8A0D6226BE8418006DB2F9 /* TabView.swift */,
-				CC8A0D6426BE86D2006DB2F9 /* MealsList.swift */,
-				CC8A0D6626BE88EA006DB2F9 /* SearchView.swift */,
-				CC8A0D6926BE8AF7006DB2F9 /* FavoritesView.swift */,
-				CC8A0D6B26BE8B5F006DB2F9 /* NetworkClass.swift */,
-				CC8A0D6F26BE912D006DB2F9 /* WebView.swift */,
-				CC8A0D7126BF8F5A006DB2F9 /* FavoriteItems.swift */,
 			);
 			path = TestPro;
 			sourceTree = "<group>";

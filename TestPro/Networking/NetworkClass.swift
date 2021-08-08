@@ -12,7 +12,7 @@ struct NetworkClass {
     @Binding var meals: Meals
     @Binding var isLoading: Bool
     func searchMeals(searchValue: String) {
-        
+        isLoading = true
         let urlString = "https://www.themealdb.com/api/json/v1/1/search.php?s=\(searchValue)"
         guard let url = URL(string: urlString) else {return }
         
@@ -39,14 +39,12 @@ struct NetworkClass {
                     print("Error decoding: \(dictionary)")
                 }
             }
+            isLoading = false
         }.resume()
-        
-        
         return
     }
     
     func getRandomMeal()  {
-        isLoading = true
         let urlString = "https://www.themealdb.com/api/json/v1/1/random.php"
         guard let url = URL(string: urlString) else {return }
         
@@ -74,8 +72,8 @@ struct NetworkClass {
                     print("Error decoding: \(dictionary)")
                 }
             }
+            isLoading = false
         }.resume()
-        isLoading = false
         return
     }
 }
